@@ -3,12 +3,14 @@ Un **metodo** in Java è un **blocco di codice** che esegue una determinata azio
 
 > In parole semplici: un metodo è come una **funzione** in matematica o in altri linguaggi di programmazione.
 
-```
+```java
 [modificatore] tipoRitorno nomeMetodo(parm1, parm2, ...) {
     // corpo del metodo
     return valore;  // solo se il tipoRitorno non è void
 }
 ```
+
+---
 ##### A COSA SERVE UN METODO?
 Un metodo serve per:
 - organizzare il codice in blocchi riutilizzabili;

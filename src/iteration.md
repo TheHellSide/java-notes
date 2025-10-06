@@ -1,4 +1,4 @@
-### ITERAZIONE
+# ITERAZIONE
 L’**iterazione** è un concetto fondamentale nella programmazione: rappresenta il **processo di ripetere un insieme di istruzioni più volte**, fino a quando una determinata **condizione logica** è soddisfatta, oppure per un **numero predefinito di volte**.
 
 > In parole semplici, l’iterazione consente a un programma di **“fare qualcosa più volte”** senza dover scrivere più volte lo stesso codice.  

@@ -1,4 +1,4 @@
-### VARIABILI:
+# VARIABILI
 Una **variabile** è un contenitore che memorizza un valore. In Java, devi **dichiarare** il tipo della variabile prima di usarla.
 
 ```java

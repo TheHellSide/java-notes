@@ -1,4 +1,4 @@
-### SELEZIONE
+# SELEZIONE
 La **selezione** è uno dei concetti fondamentali della programmazione strutturata.  
 Serve per permettere a un programma di **scegliere tra diverse alternative di esecuzione** in base a una o più **condizioni logiche**.
 

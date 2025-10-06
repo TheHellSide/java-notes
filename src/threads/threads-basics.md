@@ -12,6 +12,7 @@ Java consente di creare **programmi multithread**, in cui più thread vengono es
 > - **ottimizzare** l’uso della CPU su computer multi-core;
 > - **separare compiti diversi** (es. calcoli, interfaccia, rete).
 
+---
 ### CREARE UN THREAD
 -  ***Estendere la classe `Thread`***
 	creare un thread estendendo la classe `Thread` consiste nel derivare una nuova classe e ridefinire il metodo `run()`, che conterrà il codice da eseguire in parallelo. Il thread parte quando si chiama il metodo `start()` sull’oggetto creato.
