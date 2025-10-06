@@ -3,7 +3,7 @@ I **problemi di concorrenza** si verificano quando più thread **accedono o modi
 Questo può causare **risultati sbagliati, blocchi, o comportamenti imprevedibili nel programma**.
 
 ---
-### 🌀 1. Race Condition
+### 1. Race Condition
 Due thread modificano la **stessa variabile contemporaneamente**. Il risultato finale è **imprevedibile**.
 
 ```java 
@@ -16,8 +16,7 @@ class Counter {
 }
 ```
 
-🛠️ **Soluzioni e spiegazioni:**
-
+**Soluzioni e spiegazioni:**
 - **`synchronized`**: permette di bloccare l’accesso al metodo o blocco di codice a un solo thread alla volta, garantendo mutua esclusione e visibilità immediata delle modifiche.
 
 ```java
@@ -38,8 +37,7 @@ void increment() {
 ```
 
 ---
-### 😵‍💫 2. Visibilità incoerente
-
+### 2. Visibilità incoerente
 Un thread **non vede gli aggiornamenti** fatti da un altro su una variabile perché le modifiche possono restare in cache o non essere immediatamente visibili.
 
 ```java
@@ -49,8 +47,7 @@ while (!isReady) {
 }
 ```
 
-🛠️ **Soluzione: `volatile`**
-
+**Soluzione: `volatile`**
 - **`volatile`** garantisce che la variabile sia letta e scritta direttamente nella memoria principale, evitando cache incoerenti. Assicura visibilità immediata tra thread ma non mutua esclusione.
 
 ```java
@@ -58,12 +55,10 @@ volatile boolean isReady = false;
 ```
 
 ---
-### 🔒 3. Deadlock
-
+### 3. Deadlock
 Due thread aspettano **l’uno l’altro** per rilasciare un lock → si **bloccano per sempre**.
 
 #Thread_1:
-
 ```java
 synchronized(obj1) {     
 	synchronized(obj2) {
@@ -73,7 +68,6 @@ synchronized(obj1) {
 ```
 
 #Thread_2:
-
 ```java
 synchronized(obj2) {     
 	synchronized(obj1) { 
@@ -82,20 +76,14 @@ synchronized(obj2) {
 }
 ````
 
-🛠️ Soluzione: **ordinare sempre i lock** nello stesso ordine
+Soluzione: **ordinare sempre i lock** nello stesso ordine
 
 ---
-
-### 🕳️ 4. Starvation
-
+### 4. Starvation
 Un thread **non ottiene mai tempo CPU** perché altri thread più “forti” lo sovrastano.
-
-🛠️ Soluzione: evitare lock lunghi, usare thread bilanciati
+**Soluzione**: evitare lock lunghi, usare thread bilanciati
 
 ---
-
-### 🔁 5. Livelock
-
+### 5. Livelock
 I thread lavorano ma **non progrediscono**, es. si cedono continuamente il controllo.
-
-🛠️ Soluzione: attese casuali o limiti ai tentativi
+**Soluzione**: attese casuali o limiti ai tentativi
