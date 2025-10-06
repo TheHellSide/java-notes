@@ -31,7 +31,7 @@ if (numero > 0) {
 > 💡 **Uso tipico:** controllare una condizione singola, come verificare se un numero è positivo, se un file esiste, se l’utente è autenticato, ecc.
 
 ---
-### IF - ELSE
+### IF-ELSE
 Il costrutto `if-else` permette di **scegliere tra due alternative**:  
 - una viene eseguita **se la condizione è 'true'**,  
 - l’altra **se è 'false'**.
@@ -60,9 +60,10 @@ if (numero >= 0) {
 ```
 
 > **Uso tipico:** quando si deve gestire un **caso alternativo**, come "pari" o "dispari".
+> **OPERATORE TERNARIO:** condizione ? codice_condizione_vera : codice_condizione_falsa;
 
 ---
-### ELSE IF
+### ELSE-IF
 Quando serve **valutare più condizioni diverse**, una dopo l’altra, si può usare la catena `if - (else if * n) - else`.
 
 **Sintassi:**
