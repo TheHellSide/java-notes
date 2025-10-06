@@ -45,6 +45,5 @@ public class HelloWorld {
 	- [concetti fondamentali dei threads](src/threads/threads-basics.md)
 	- [multi-threading](src/threads/multi-threading.md)
 
-
-
+### Author:
 Java Notes - [TheHellSide](https://github.com/TheHellSide)
